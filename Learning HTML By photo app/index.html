@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- Yeh HTML5 document ka declaration hai. Browser ko batata hai ki yeh HTML5 format mein hai -->
+
+<html lang="en">
+<!-- HTML document ka starting tag, aur language English set ki gayi hai -->
+
+<head>
+    <title>CatPhotoApp</title>
+    <!-- Title tag mein page ka naam hota hai jo browser ke tab mein dikhta hai -->
+</head>
+
+<body>
+    <!-- Body tag ke andar hamara pura visible content hota hai jo screen par user ko dikhta hai -->
+
+    <main>
+        <!-- Main tag batata hai ki yeh page ka main content hai -->
+
+        <h1>CatPhotoApp</h1>
+        <!-- h1 sabse bada heading hoti hai. SEO aur accessibility ke liye important hoti hai -->
+
+        <section>
+            <!-- Section tag content ko logically group karta hai, jaise ek topic ya theme ke andar -->
+
+            <h2>Cat Photos</h2>
+            <!-- h2 second-level heading hai. Hierarchy maintain karne ke liye use hoti hai -->
+
+            <p>
+                Everyone loves
+                <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a>
+                online!
+            </p>
+            <!-- <a> anchor tag hota hai. Yeh link create karta hai kisi external ya internal page ka -->
+
+            <p>
+                See more
+                <a target="_blank" href="https://freecatphotoapp.com">cat photos</a>
+                in our gallery.
+            </p>
+            <!-- target="_blank" ka matlab link new tab mein khulega -->
+
+            <a href="https://freecatphotoapp.com">
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                    alt="A cute orange cat lying on its back.">
+            </a>
+            <!-- <img> image tag hai. src se image URL diya jata hai aur alt screen reader ke liye helpful hota hai -->
+        </section>
+
+        <section>
+            <h2>Cat Lists</h2>
+
+            <h3>Things cats love:</h3>
+            <!-- h3 third-level heading hai. Yeh h2 ke under ek aur sub-topic dikhata hai -->
+
+            <ul>
+                <!-- Unordered list: bullet points ke form mein list show karta hai -->
+                <li>catnip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+
+            <figure>
+                <!-- Figure tag image aur uske caption ko group karta hai -->
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                    alt="A slice of lasagna on a plate.">
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+                <!-- figcaption image ke neeche explanation ya title dene ke liye use hota hai -->
+            </figure>
+
+            <h3>Top 3 things cats hate:</h3>
+
+            <ol>
+                <!-- Ordered list: numbered list dikhata hai -->
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+                    alt="Five cats looking around a field.">
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                <!-- <strong> ka use important text ko bold aur semantically strong dikhata hai -->
+            </figure>
+        </section>
+
+        <section>
+            <h2>Cat Form</h2>
+            <!-- Form section jahan user kuch input de sakta hai -->
+
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <!-- Form tag data submit karne ke liye hota hai. action attribute mein destination URL diya hota hai -->
+
+                <fieldset>
+                    <!-- Fieldset related inputs ko visually aur logically group karta hai -->
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <!-- Legend tag fieldset ka title batata hai -->
+
+                    <!-- Label ke andar input diya gaya hai. Jab label par click karenge to input activate hota hai -->
+                    <label>
+                        <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>
+                        Indoor
+                    </label>
+
+                    <label>
+                        <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">
+                        Outdoor
+                    </label>
+                    <!-- Radio buttons same name hone par group banate hai jisme ek hi option select ho sakta hai -->
+                </fieldset>
+
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+
+                    <!-- Checkbox multiple select karne ke liye use hota hai -->
+                    <input id="loving" type="checkbox" name="personality" value="loving" checked>
+                    <label for="loving">Loving</label>
+
+                    <input id="lazy" type="checkbox" name="personality" value="lazy">
+                    <label for="lazy">Lazy</label>
+
+                    <input id="energetic" type="checkbox" name="personality" value="energetic">
+                    <label for="energetic">Energetic</label>
+                </fieldset>
+
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <!-- Text input field. Placeholder ek hint hota hai jo field ke andar show hota hai -->
+                <!-- required lagane se form bina yeh field bhare submit nahi hota -->
+
+                <button type="submit">Submit</button>
+                <!-- Submit button to send the form -->
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer tag page ke neeche ka content dikhata hai, jaise copyright, links -->
+        <p>
+            No Copyright -
+            <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+        </p>
+    </footer>
+</body>
+
+</html>

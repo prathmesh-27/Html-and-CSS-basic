@@ -1,0 +1,154 @@
+/* BODY SETUP — yahan se page ka base look set ho raha hai */
+body {
+    background-image: url(https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1147&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* ek achhi background image daali hai */
+    background-repeat: no-repeat;
+    /* image baar-baar repeat na ho */
+    background-size: cover;
+    /* poore screen ko cover kare image */
+    background-attachment: fixed;
+    /* scroll karne par image hilti nahi hai */
+    background-position: center;
+    /* image ko center mein align kiya hai */
+    font-family: 'Segoe UI', sans-serif;
+    /* ek readable aur modern font */
+    padding: 20px;
+    /* thoda gap body ke andar */
+    color: #2e2e2e;
+    /* text ka color thoda dark grey */
+}
+
+
+/* HEADING STYLING — sabse upar ke titles ke liye */
+h1 {
+    font-size: 42px;
+    /* bada title */
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #4e342e;
+    /* coffee brown jaisa color */
+}
+
+h2 {
+    font-size: 30px;
+    /* thoda chhota subheading */
+    color: #6d4c41;
+}
+
+.established {
+    font-style: italic;
+    /* italic style — thoda stylish feel dene ke liye */
+    color: #8d6e63;
+}
+
+/* sabko center mein laa diya — clean look */
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+
+/* MENU BOX — menu ke card ke liye styling */
+.menu {
+    width: 80%;
+    /* screen ka 80% width le */
+    background-color: #f3e5ab;
+    /* halka creamy color - cafe jaisa feel */
+    margin: auto;
+    /* horizontally center ho jaaye */
+    padding: 25px;
+    max-width: 550px;
+    /* max width fix kar di - bada screen par bhi theek lage */
+    border-radius: 10px;
+    /* corners gol kiye */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* thoda shadow neeche - 3D jaisa look */
+}
+
+
+/* LINE STYLING */
+hr {
+    height: 2px;
+    /* line ki motai */
+    background-color: #5d4037;
+    border: none;
+    /* default border hata diya */
+}
+
+.bottom-line {
+    margin-top: 25px;
+    /* line se upar thoda space */
+}
+
+
+/* ITEM DISPLAY — coffee ka naam aur price side-by-side */
+h1,
+h2 {
+    font-family: 'Georgia', serif;
+    /* heading ka font classy rakha */
+}
+
+.item p {
+    display: inline-block;
+    /* name aur price same line mein aayein */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    /* thoda bold feel */
+}
+
+/* left side: coffee ka naam */
+.flavor,
+.dessert {
+    text-align: left;
+    width: 74%;
+    /* zyada space naam ke liye */
+}
+
+/* right side: price */
+.price {
+    text-align: right;
+    width: 25%;
+    /* kam space price ke liye */
+    color: #4e342e;
+    /* same brown tone */
+}
+
+
+/* FOOTER STYLE */
+footer {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+    color: #3e2723;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+
+/* LINKS — hover/visited ke liye styling */
+a {
+    color: #4e342e;
+    /* normal link color */
+    text-decoration: none;
+    /* underline hata di */
+}
+
+a:visited {
+    color: #4e342e;
+    /* visited ke baad bhi same color */
+}
+
+a:hover {
+    color: #6d4c41;
+    /* mouse le jaane par halka change */
+}
+
+a:active {
+    color: #8d6e63;
+    /* click karte waqt */
+}

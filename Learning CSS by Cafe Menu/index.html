@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Ye line browser ko batati hai ki yeh HTML5 document hai -->
+
+<html lang="en">
+<!-- HTML ka root element - lang='en' se browser ko language info milti hai -->
+
+<head>
+    <!-- Page ke settings aur linking files ke liye meta-data area -->
+
+    <meta charset="utf-8" />
+    <!-- UTF-8 encoding use ho rahi hai - sab characters (including Hindi) support karta hai -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive design ke liye - mobile pe bhi sahi dikhai de -->
+
+    <title>Cafe Menu</title>
+    <!-- Browser tab mein title jo dikhega -->
+
+    <link href="./styles.css" rel="stylesheet" />
+    <!-- External CSS file link kiya gaya hai styling ke liye -->
+</head>
+
+<body>
+    <!-- Actual visible page content yahaan se start hota hai -->
+
+    <div class="menu">
+        <!-- Menu ke main box ko center aur styled banane ke liye wrapper div -->
+
+        <main>
+            <!-- Main content batata hai browser ko - SEO aur accessibility ke liye important -->
+
+            <h1>CAFE MENU</h1>
+            <!-- Sabse bada heading - page ka main title -->
+
+            <p class="established">Est. 2020</p>
+            <!-- Cafe ki establishment date, thoda stylish info -->
+
+            <hr>
+            <!-- Decorative horizontal line add ki hai - section break dikhane ke liye -->
+
+            <!-- ☕ COFFEE SECTION -->
+            <section>
+                <!-- Logical section banata hai - SEO aur screen reader dono ke liye achha hota hai -->
+
+                <h2>Coffee</h2>
+                <!-- Coffee section ka heading - h1 ke baad h2 aata hai hierarchically -->
+
+                <!-- Har ek item ek article mein likha gaya hai - independent content units ke liye useful -->
+
+                <article class="item">
+                    <p class="flavor">Espresso</p>
+                    <p class="price">2.50</p>
+                </article>
+
+                <article class="item">
+                    <p class="flavor">Cappuccino</p>
+                    <p class="price">3.25</p>
+                </article>
+
+                <article class="item">
+                    <p class="flavor">Iced Americano</p>
+                    <p class="price">3.00</p>
+                </article>
+
+                <article class="item">
+                    <p class="flavor">Vanilla Cold Brew</p>
+                    <p class="price">3.75</p>
+                </article>
+
+                <article class="item">
+                    <p class="flavor">Toffee Nut Latte</p>
+                    <p class="price">4.00</p>
+                </article>
+
+                <article class="item">
+                    <p class="flavor">Dark Mocha</p>
+                    <p class="price">4.50</p>
+                </article>
+            </section>
+
+            <!-- 🍰 DESSERTS SECTION -->
+            <section>
+                <h2>Desserts</h2>
+
+                <article class="item">
+                    <p class="dessert">Chocolate Brownie</p>
+                    <p class="price">2.00</p>
+                </article>
+
+                <article class="item">
+                    <p class="dessert">Donut</p>
+                    <p class="price">1.50</p>
+                </article>
+
+                <article class="item">
+                    <p class="dessert">Cherry Pie</p>
+                    <p class="price">2.75</p>
+                </article>
+
+                <article class="item">
+                    <p class="dessert">Cheesecake</p>
+                    <p class="price">3.00</p>
+                </article>
+
+                <article class="item">
+                    <p class="dessert">Cinnamon Roll</p>
+                    <p class="price">2.50</p>
+                </article>
+
+                <article class="item">
+                    <p class="dessert">Tiramisu</p>
+                    <p class="price">3.25</p>
+                </article>
+
+                <article class="item">
+                    <p class="dessert">Red Velvet Cupcake</p>
+                    <p class="price">2.25</p>
+                </article>
+            </section>
+        </main>
+
+        <hr class="bottom-line">
+        <!-- Footer se pehle ek last separator line -->
+
+        <footer>
+            <!-- Page ka neeche ka part - mostly legal, contact, ya links hota hai -->
+
+            <p>
+                <a href="#" target="_blank">Visit our website</a>
+                <!-- External link to site - target="_blank" se new tab mein open hota hai -->
+            </p>
+
+            <p class="address">123 Cafe Drive</p>
+            <!-- Dummy address info show karne ke liye -->
+        </footer>
+    </div>
+</body>
+
+</html>
