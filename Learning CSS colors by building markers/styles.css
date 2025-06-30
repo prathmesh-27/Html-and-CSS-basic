@@ -1,0 +1,151 @@
+/*
+🎨 CSS Color Methods – Beginner Notes
+
+1. Named Colors
+   - Example: red, blue, orange
+   - Use when you want simple color names.
+   - Easy to use but limited shades.
+
+2. Hex Colors (#RRGGBB)
+   - Example: #FF0000 (Red), #71F53E (Green), #000000 (Black)
+   - R, G, B are hexadecimal values from 00 to FF.
+   - Gives precise color control, very commonly used.
+
+3. RGB Colors
+   - Example: rgb(255, 0, 0) → Pure red
+   - Uses 3 values (0-255) for Red, Green, Blue.
+   - Very useful in gradients and shadows.
+
+4. RGBA Colors
+   - Example: rgba(255, 255, 255, 0.5)
+   - Same as RGB but with "A" for alpha (opacity).
+   - A = 0 (transparent) to 1 (opaque).
+   - Use this when you need see-through effects.
+
+5. HSL Colors (Hue, Saturation, Lightness)
+   - Example: hsl(240, 56%, 42%) → Blue shade
+   - Hue = color angle (0-360°), Saturation = color strength, Lightness = brightness
+   - Easy for adjusting brightness or color tone.
+
+6. HSLA Colors
+   - Example: hsla(223, 59%, 31%, 0.8)
+   - HSL + Alpha channel for transparency.
+   - Best for combining color control + opacity.
+
+🌈 Hue Angles for Reference:
+   0°   = Red
+   60°  = Yellow
+   120° = Green
+   180° = Cyan
+   240° = Blue
+   300° = Magenta
+
+✅ When to Use:
+   - Named → simple tasks
+   - Hex → most common and supported
+   - RGB → detailed control
+   - RGBA → for transparency
+   - HSL → for easy tweaking of brightness/hue
+   - HSLA → for both color + transparency
+
+🧠 Pro Tip:
+   - Use HSL for design work (more intuitive).
+   - Use RGBA or HSLA for glass effects or glowing shadows.
+*/
+
+
+
+/* 👇 Heading ko center align karta hai */
+h1 {
+    text-align: center;
+}
+
+/* 👇 Main container ke liye background aur padding set karta hai */
+.container {
+    background-color: rgb(255, 255, 255);
+    /* White background */
+    padding: 10px 0;
+    /* Top aur bottom padding */
+}
+
+/* 👇 Marker ka base size set karta hai */
+.marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+    /* Center align horizontally using auto */
+}
+
+/* 👇 Marker ka 'cap' part (starting color wala part) */
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+/* 👇 Marker ka 'sleeve' part (end wala part) */
+.sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Transparent white background */
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+    /* Double border to show marker ka edge */
+}
+
+/* 👇 Dono cap aur sleeve ko ek hi line mein dikhane ke liye */
+.cap,
+.sleeve {
+    display: inline-block;
+    /* Inline blocks side by side dikhte hain */
+}
+
+/* 👇 Each of the following classes sets the marker's cap color using gradients and shadows */
+
+/* 🟪 Violet marker color – 3 tone gradient + glow effect */
+.violet {
+    background: linear-gradient(rgb(192, 56, 245), rgb(218, 62, 245), rgb(118, 18, 112));
+    box-shadow: 0 0 20px rgba(218, 62, 245, 0.8);
+    /* Purple glow */
+}
+
+/* 🟦 Indigo marker – Deep bluish-purple tones */
+.indigo {
+    background: linear-gradient(rgb(66, 43, 133), rgb(75, 0, 130), rgb(74, 9, 135));
+    box-shadow: 0 0 20px rgba(75, 0, 130, 0.8);
+    /* Indigo glow */
+}
+
+/* 🔵 Blue marker – HSL gradient for smooth color */
+.blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+    /* Blue glow */
+}
+
+/* 🟢 Green marker – Fresh lime to deep green tones */
+.green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+    /* Green glow */
+}
+
+/* 🟡 Yellow marker – Earthy yellow tones */
+.yellow {
+    background: linear-gradient(#65680d, #eff53e, #71710f);
+    box-shadow: 0 0 20px 0 #7c7e20cc;
+    /* Yellow glow */
+}
+
+/* 🟠 Orange marker – Warm orange tones */
+.orange {
+    background: linear-gradient(#685a0d, orange, #6c3211);
+    box-shadow: 0 0 20px 0 #7e5220cc;
+    /* Orange glow */
+}
+
+/* 🔴 Red marker – Reddish pink to maroon shades */
+.red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+    /* Red glow */
+}
